@@ -3,6 +3,9 @@
 This project contains the data files for scoring the 2018 Tracking Competition,
 an annual event hosted by Bay Area Skydiving in Byron, CA.
 
+![Open Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/0000-initial-setup/images/open-winners.jpg)
+![Novice Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/0000-initial-setup/images/novice-winners.jpg)
+
 The setup includes a Jupyter Lab dockerized implementation with local data
 storage and single user access credentials.
 
