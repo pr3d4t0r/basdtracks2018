@@ -3,12 +3,8 @@
 This project contains the data files for scoring the 2018 Tracking Competition,
 an annual event hosted by Bay Area Skydiving in Byron, CA.
 
-## This is a work in progress
-
-**Jupyter Lab set up is next - please be patient!**
-
-![Open Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/0000-initial-setup/images/open-winners.jpg)
-![Novice Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/0000-initial-setup/images/novice-winners.jpg)
+![Open Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/images/open-winners.jpg)
+![Novice Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/images/novice-winners.jpg)
 
 The setup includes a Jupyter Lab dockerized implementation with local data
 storage and single user access credentials.
@@ -50,13 +46,64 @@ one-time event.
 To generate the first time password, open a terminal shell in the
 `basdtracks2018` directory, then execute:
 
-
 ```bash
 docker-compose up --remove-orphans ; docker-compose rm
 ```
 
 This is a good time for the user to get some coffee ☕️ if they have a slow
 Internet connection.
+
+Jupyter Lab starts when the download is complete, and shows the legend:
+
+```
+notebook    |     Copy/paste this URL into your browser when you connect for the first time,
+notebook    |     to login with a token:
+notebook    |         http://b8b27455b503:8888/?token=6c7546c58eff46029e095ea0f8e95f5006fd66dfd9fa63d6&token=6c7546c58eff46029e095ea0f8e95f5006fd66dfd9fa63d6
+```
+
+Generate a new password by:
+
+1. Log on to `http://localhost:8888` on your web browser
+1. Enter the token in the _Setup a Password_ section, and enter a password of
+   choice.  The token, in our example, is the string of numbers and letters
+   after `token=`, or `6c7546c58eff46029e095ea0f8e95f5006fd66dfd9fa63d6` in the
+   example
+1. Click on _Login and set new password_ to go to the work bench
+1. Click on the _Logout_ button at the top right corner
+1. Go to the terminal and stop the Jupyter container by pressing Ctrl-C
+1. Respond "y" to the _Going to remove notebook_ prompt
+
+![Password set up and token browser example](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/token-password-setup.png)
+
+
+Done!  You may validate that the first time run was successful by running, this
+command:
+
+```bash
+if [[ -e "scoring/_jupyter/jupyter_notebook_config.json" ]]; then echo 'Success!'; else echo "Failed - try again"; fi
+```
+
+
+### Work with the data
+
+The process is super simple now:
+
+1. Start the Jupyter Lab container
+1. Log on to Jupyter at `http://localhost:8888`
+1. Play with the data to your heart's content!
+
+To start:
+
+```bash
+docker-compose up --remove-orphans ; docker-compose rm
+```
+
+When done, kill the process with Ctrl-C or turn off the computer.  That's it!
+
+
+### Working with data
+
+**Section under construction ***
 
 
 ## FAQ
