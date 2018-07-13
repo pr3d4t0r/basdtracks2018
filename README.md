@@ -96,7 +96,7 @@ The process is super simple now:
 To start:
 
 ```bash
-docker-compose up --remove-orphans ; docker-compose rm
+docker-compose up --remove-orphans ; docker-compose rm -f
 ```
 
 When done, kill the process with Ctrl-C or turn off the computer.  That's it!
