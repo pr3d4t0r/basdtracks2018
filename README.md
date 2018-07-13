@@ -3,8 +3,8 @@
 This project contains the data files for scoring the 2018 Tracking Competition,
 an annual event hosted by Bay Area Skydiving in Byron, CA.
 
-![Open Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/images/open-winners.jpg)
-![Novice Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/images/novice-winners.jpg)
+![Open Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/master/images/open-winners.jpg)
+![Novice Category Winners](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/master/images/novice-winners.jpg)
 
 The setup includes a Jupyter Lab dockerized implementation with local data
 storage and single user access credentials.
@@ -73,7 +73,7 @@ Generate a new password by:
 1. Go to the terminal and stop the Jupyter container by pressing Ctrl-C
 1. Respond "y" to the _Going to remove notebook_ prompt
 
-![Password set up and token browser example](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/token-password-setup.png)
+![Password set up and token browser example](https://raw.githubusercontent.com/pr3d4t0r/basdtracks2018/master/images/token-password-setup.png)
 
 
 Done!  You may validate that the first time run was successful by running, this
