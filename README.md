@@ -28,6 +28,7 @@ the [FlySafe](https://www.facebook.com/FlySafeApp/) BASE distance analysis tool.
 * Latest Docker for Linux, MacOS, or Windows
 * Firefox, Chrome, Safari, or any modern browser
 * Basic knowledge of [Jupyter Lab](https://jupyter-notebook.readthedocs.io/en/stable/index.html)
+  or Jupyter Notebook
 
 
 ## Jupyter Lab
