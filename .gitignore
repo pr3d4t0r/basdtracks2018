@@ -102,3 +102,21 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# *** basdtracks2018 ***
+
+# Vim
+**swp
+
+
+# Notebook credential/configuration
+_jupyter/
+
+
+# FlySafe exclusions
+**FlySafe.jar
+**FlySafe_Windows.bat
+**/scoring/README.txt
+**exit_example.txt
+
