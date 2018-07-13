@@ -120,6 +120,17 @@ When done, kill the process with Ctrl-C or turn off the computer.  That's it!
    competitor, showed a difference of 20-100 ft in either direction.  Whenever
    possible the window size remained the same and the map was hidden.
 
+1. **I couldn't write the password file or create new notebooks - what's up?** -
+   The notebook needs full file system admin permissions because the container
+   and Jupyter run under two different privilege levels.  To solve, run this 
+   command:
+
+   ```
+   chmod 777 ./scoring && \
+   mkdir -p ./scoring/_jupyter && \
+   chmod 777 -Rfv ./scoring/_jupyter
+   ```
+
 1. **How were the FlySights configured?** - They came configured from Bionic
    Avionics and we used them as-is.  While the competitors were welcome to use
    their personal FlySights along with the competition devices, the enclosed
